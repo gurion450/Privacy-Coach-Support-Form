@@ -7,22 +7,27 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             padding: 20px;
             background-color: #f8f9fa;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         h1 {
             text-align: center;
             color: #0056b3;
         }
         form {
+            width: 100%;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             background-color: #fff;
+            box-sizing: border-box;
         }
         .form-group {
             margin-bottom: 15px;
@@ -53,8 +58,8 @@
 </head>
 <body>
 
-    <h1>Privacy Coach Support Form</h1>
     <form action="/submit_support_request" method="post">
+        <h1>Privacy Coach Support Form</h1>
         <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>
